@@ -23,7 +23,7 @@ export default function Apoiar() {
   });
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-white">
       <TextField
         id="outlined-basic"
         label="Buscar"
@@ -31,7 +31,7 @@ export default function Apoiar() {
           marginTop: 30,
         }}
         variant="outlined"
-        className="w-full md:w-1/2"
+        className="w-[90%] md:w-1/2"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
@@ -46,7 +46,7 @@ export default function Apoiar() {
             <div className="flex flex-col md:flex-row gap-6 items-center md:items-start mt-12">
               <Image src={ImagemLogo} alt="Logo" width={130} height={130} />
               <div className="flex flex-col gap-3">
-                <div className="flex gap-2">
+                <div className="flex gap-2 text-xl">
                   {index + 1}.<h1>{coletor.nome}</h1> -{" "}
                   <p>{coletor.idade} anos</p>
                 </div>
@@ -81,7 +81,10 @@ export default function Apoiar() {
                 </div>
               </div>
             </div>
-            <button className="bg-[#65C854] py-4 px-24 rounded-md font-bold text-white hover:opacity-80">
+            <button
+              onClick={() => window.open(coletor.link, "_blank")}
+              className="bg-[#65C854] py-4 px-24 rounded-md font-bold text-white hover:opacity-80"
+            >
               Apoiar agora
             </button>
             {index < filteredColetores.length - 1 && (
