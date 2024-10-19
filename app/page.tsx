@@ -182,7 +182,7 @@ export default function Home() {
           Empresas Parceiras
         </h1>
         <Carousel responsive={responsive} infinite centerMode autoPlay>
-          <div className="flex items-center justify-center h-[200px]">
+          <div className="flex items-center justify-center h-[200px] mx-4">
             <Image
               src={SEBRAE}
               alt="Certificacao"
@@ -191,7 +191,7 @@ export default function Home() {
               className="object-contain"
             />
           </div>
-          <div className="flex items-center justify-center h-[200px]">
+          <div className="flex items-center justify-center h-[200px] mx-4">
             <Image
               src={Senac}
               alt="Certificacao"
@@ -200,7 +200,7 @@ export default function Home() {
               className="object-contain"
             />
           </div>
-          <div className="flex items-center justify-center h-[200px]">
+          <div className="flex items-center justify-center h-[200px] mx-4">
             <Image
               src={GERDAU}
               alt="Certificacao"
@@ -209,7 +209,7 @@ export default function Home() {
               className="object-contain"
             />
           </div>
-          <div className="flex items-center justify-center h-[200px]">
+          <div className="flex items-center justify-center h-[200px] mx-4">
             <Image
               src={Pelotas}
               alt="Certificacao"
