@@ -23,7 +23,7 @@ export default function Apoiar() {
   });
 
   return (
-    <div className="flex flex-col items-center bg-white">
+    <div className="flex flex-col items-center">
       <TextField
         id="outlined-basic"
         label="Buscar"

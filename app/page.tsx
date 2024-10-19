@@ -13,7 +13,7 @@ import Certificado from "../public/cetificado.png";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div>
       <section className="flex flex-col md:flex-row items-center gap-8 p-8 justify-center">
         <div className="flex flex-col gap-4 max-w-[600px]">
           <h1 className="font-bold text-3xl md:text-5xl">
